@@ -53,6 +53,7 @@ print "Waiting burnout...".
 wait until _engines[0]:flameout.
 print "Engine used all fuel. Please hit the button when you a ready.".
 set _selection to terminal:input:getchar().
+set kuniverse:timewarp:rate to 100.
 _run_stage.
 print "Locking steering to landing vector.".
 _lock_landing.
